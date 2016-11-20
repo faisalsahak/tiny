@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+<% include partials/bootstrap %>
+</head>
+<body style="background-color: #d5e2ca">
+    <form method="POST" action="/register"style="width: 17%; margin: auto; margin-top: 20%;">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password" value="">
+      </div>
+      <div>
+        <input type="submit" class="btn btn-success" value="Register">
+      </div>
+      <p>Have An Account? <a href="/login">Login</a></p>
+    </form>
+
+
+</body>
+</html>

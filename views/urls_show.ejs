@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include partials/bootstrap %>
+</head>
+<body style="font-size:20px; padding:50px; background-color: #d5e2ca">
+
+    <form action="/urls/<%= shortURL %>?_method=PUT" method="POST">
+      <label for="longURL">ShortURL: <%= shortURL %></label>
+      <input id="longURL" type="text" name="longURL" placeholder="<%= urls[shortURL].longURL %>" >
+      <input type="submit" class="btn btn-success"value="Submit">
+    </form>
+
+</body>
+</html>

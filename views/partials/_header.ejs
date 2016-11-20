@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include bootstrap %>
+</head>
+<body>
+    <% if ( !user ) { %>
+      <a href ="/login">Login</a> <a href ="/register">Sign up</a>
+
+    <% } else { %>
+      Welcome <%= user.email %> <a href ="/urls">My links</a>
+       <form method="POST" action="/logout">
+         <input type="submit" value="Log out" class="btn btn-primary">
+       </form>
+    <% } %>
+
+
+</body>
+</html>
